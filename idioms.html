@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Idioms</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Idioms</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <div class="flashcard-grid">
+      <div class="flashcard">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">Break the ice</div>
+          <div class="flashcard-back">To start a conversation</div>
+        </div>
+      </div>
+      <div class="flashcard">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">Hit the sack</div>
+          <div class="flashcard-back">Go to sleep</div>
+        </div>
+      </div>
+      <div class="flashcard">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">Piece of cake</div>
+          <div class="flashcard-back">Something very easy</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 English Learning Hub</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll(".flashcard").forEach(card => {
+      card.addEventListener("click", () => {
+        card.classList.toggle("flipped");
+      });
+    });
+  </script>
+</body>
+</html>

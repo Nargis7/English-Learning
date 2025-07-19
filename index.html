@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>English Learning Hub</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>📘 English Learning Hub</h1>
+    <nav>
+      <ul>
+        <li><a href="grammar.html">Grammar</a></li>
+        <li><a href="synonyms.html">Synonyms & Antonyms</a></li>
+        <li><a href="phrasal-verbs.html">Phrasal Verbs</a></li>
+        <li><a href="idioms.html">Idioms</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="hero-text">
+      <!-- <h2>Let's Grow Your English Skills</h2>
+        -->
+      <h2 id="typing-text"></h2>
+
+      <p>Hi! I'm Nargis, and this is your one-stop hub for learning English grammar, vocabulary, and improving your communication skills.</p>
+      <button>Start Learning</button>
+    </div>
+    <div class="hero-image">
+      <img src="nargis.jpeg" alt="Nargis photo">
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 English Learning Hub | Created by Nargis</p>
+  </footer>
+  <script>
+  const text = "Let's Grow Your English Skills";
+  const typingTarget = document.getElementById("typing-text");
+  let index = 0;
+
+  function typeText() {
+    if (index < text.length) {
+      typingTarget.innerHTML += text.charAt(index);
+      index++;
+      setTimeout(typeText, 100); // speed of typing
+    }
+  }
+
+  window.onload = typeText;
+</script>
+
+</body>
+</html>

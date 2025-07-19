@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Grammar</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Grammar</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Basic Grammar Topics</h2>
+    <div class="flashcard-grid">
+      <div class="flashcard">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">Nouns</div>
+          <div class="flashcard-back">Names of people, places, things.<br><em>Examples:</em> teacher, city, apple.</div>
+        </div>
+      </div>
+      <div class="flashcard">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">Pronouns</div>
+          <div class="flashcard-back">Words that replace nouns.<br><em>Examples:</em> he, she, it, they.</div>
+        </div>
+      </div>
+      <div class="flashcard">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">Verbs</div>
+          <div class="flashcard-back">Action or state words.<br><em>Examples:</em> run, think, is, are.</div>
+        </div>
+      </div>
+      <div class="flashcard">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">Adjectives</div>
+          <div class="flashcard-back">Describe nouns.<br><em>Examples:</em> tall, red, beautiful.</div>
+        </div>
+      </div>
+      <div class="flashcard">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">Adverbs</div>
+          <div class="flashcard-back">Describe verbs, adjectives, or other adverbs.<br><em>Examples:</em> quickly, very, well.</div>
+        </div>
+      </div>
+      <div class="flashcard">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">Prepositions</div>
+          <div class="flashcard-back">Show relationship between words.<br><em>Examples:</em> in, on, under, beside.</div>
+        </div>
+      </div>
+      <div class="flashcard">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">Conjunctions</div>
+          <div class="flashcard-back">Join words or sentences.<br><em>Examples:</em> and, but, because, although.</div>
+        </div>
+      </div>
+      <div class="flashcard">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">Interjections</div>
+          <div class="flashcard-back">Express emotions.<br><em>Examples:</em> wow! oh! ouch!</div>
+        </div>
+      </div>
+      <div class="flashcard">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">Articles</div>
+          <div class="flashcard-back">Define nouns as specific or unspecific.<br><em>Examples:</em> a, an, the.</div>
+        </div>
+      </div>
+      <div class="flashcard">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">Tenses</div>
+          <div class="flashcard-back">
+            Present Simple: I eat.<br>
+            Present Continuous: I am eating.<br>
+            Past Simple: I ate.<br>
+            Past Continuous: I was eating.<br>
+            Future Simple: I will eat.<br>
+            Future Continuous: I will be eating.<br>
+            Present Perfect: I have eaten.<br>
+            Past Perfect: I had eaten.<br>
+            Future Perfect: I will have eaten.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 English Learning Hub</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll(".flashcard").forEach(card => {
+      card.addEventListener("click", () => {
+        card.classList.toggle("flipped");
+      });
+    });
+  </script>
+</body>
+</html>
